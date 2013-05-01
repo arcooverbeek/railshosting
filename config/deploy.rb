@@ -8,7 +8,7 @@ set :application, "railshosting"
 set :user, "nginxuser"
 set :deploy_to, "/var/www/apps/#{application}"
 set :deploy_via, :remote_cache
-set :use_sudo, false
+set :use_sudo, true
 
 set :scm, "git"
 set :repository, "git@github.com:arcooverbeek/#{application}.git"
